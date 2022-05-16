@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!--------- <title>Responsive Navigation Menu</title>------>
+    <link rel="stylesheet" href="grievance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/cavolini" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="shop1.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.7rem 0.7rem;
+        padding-top: 0%;
+        background: #01030c;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        overflow-y: scroll;
+    }
+
+    nav {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        text-align: center;
+        background-color: #040508;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        padding: 10px 50px 10px 50px;
+
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+
+    }
+
+    nav .menu-btn i {
+
+        font-size: 17px;
+        color: #eeeff5;
+        box-shadow: -3px -3px 7px red,
+            3px 3px 5px red;
+        height: 37px;
+        width: 37px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 37px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+    }
+
+
+    nav .menu-btn i:hover {
+
+        box-shadow: inset -3px -3px 7px #ffffff,
+            inset 3px 3px 5px #ceced1;
+        color: #008CBA;
+    }
+
+    nav .logo {
+        color: rgb(211, 9, 9);
+        font-family: 'Sofia';
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        color: #f2f2f2;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 8px 15px;
+        margin-left: -100%;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+
+    @media (max-width: 1000px) {
+        nav {
+            padding-right: 20px;
+            padding-left: 0px;
+        }
+    }
+</style> 
+<body>
+    <nav>
+        <div class="logo"><b>
+                ARMOR HELMETS</b></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="#">feature</a></li>
+            <li><a href="shop1.html">Shop</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Our Team.html">Team</a></li>
+
+        </ul>
+    </nav>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="card">
+        <img src="images/Armor 1.0.png" alt="Denim Jeans" style="width:100%">
+        <h1>Armor 1.0 </h1>
+        <p class="price">1500 INR</p>
+        <p> Limited Period offer!!</p>
+        <p><button class="glow-on-hover" type="button" onclick="document.location='payment.html.html'">BUY</button></p>
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="card">
+        <img src="images/Armor 1.0 (1).png" alt="Denim Jeans" style="width:100%">
+        <h1>Armor 2.0</h1>
+        <p class="price">**** INR</p>
+        <p>Launching date will be released soon!!</p>
+        <p><p><button class="glow-on-hover" type="button" onclick="document.location='payment.html.html'">BUY</button></p></p>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="card">
+        <img src="images/Armor 1.0 (2).png" alt="Denim Jeans" style="width:100%">
+        <h1>Armor 3.0</h1>
+        <p class="price">**** INR</p>
+        <p>Yet to come!!!</p>
+        <p><p><button class="glow-on-hover" type="button" onclick="document.location='https://th.bing.com/th/id/R.2c164c795888f170d71ee9b93e999134?rik=eq4e11oUzQp4rA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f6%2fv%2fv%2fH%2fB%2fQ%2fwait-sign-md.png&ehk=NKJp5A5%2ffFfBromlWE0rxI0u06rKGttV1xAJ6AfQaNw%3d&risl=&pid=ImgRaw&r=0'">Upcomming</button></p></p>
+    </div>
+</body>
+</html>
